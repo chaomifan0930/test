@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- 只要配置了驼峰命名法则，那么会把stu_id列自动映射到stuId属性 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<plugins>
+		<!-- 分页插件 -->
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<!-- 合理化配置 -->
+			<property name="reasonable" value="true"/>
+		</plugin>
+	</plugins>
+	
+</configuration>
