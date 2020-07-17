@@ -23,8 +23,7 @@ public class CustomRealmMD5 extends AuthorizingRealm{
 	
 	@Autowired
 	SysUserService sysUserService;
-	@Autowired
-	SysPermissionService sysPermissionService;
+
 	
 	//”√ªß ⁄»®
 	@Override

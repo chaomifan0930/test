@@ -12,10 +12,10 @@ public class BgPrivateCalender implements Serializable {
 
     private String calendarTitle;
 
-    @DateTimeFormat(pattern="yyyy-mm-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date calendarStart;
 
-    @DateTimeFormat(pattern="hh:mm:ss")
+    @DateTimeFormat(pattern="HH:mm:ss")
     private Date calendarTime;
 
     private String personNumber;
@@ -24,7 +24,7 @@ public class BgPrivateCalender implements Serializable {
 
     private Long companyId;
 
-    @DateTimeFormat(pattern="yyyy-mm-dd hh:mm:ss")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date lastModifyDate;
 
     private static final long serialVersionUID = 1L;

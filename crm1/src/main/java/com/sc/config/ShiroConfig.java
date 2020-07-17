@@ -48,8 +48,8 @@ public class ShiroConfig {
 		//如果实现验证码功能，需要把该类改为自定义的表单认证过滤器类
 		FormAuthenticationFilter form=new FormAuthenticationFilter();
 		form.setLoginUrl("/loginctrl/login.do");
-		form.setUsernameParam("uname");
-		form.setPasswordParam("upass");
+		form.setUsernameParam("userName");
+		form.setPasswordParam("userPass");
 		
 		ShiroFilterFactoryBean shiroFilter=new ShiroFilterFactoryBean();
 		shiroFilter.setSecurityManager(this.securityManager());
@@ -72,24 +72,20 @@ public class ShiroConfig {
 		map.put("/js/**", "anon");
 		map.put("/sql/**", "anon");
 		map.put("/upload/**", "anon");
+		
+		map.put("/html/**", "anon");
+		map.put("/lib/**", "anon");
+		map.put("/static/**", "anon");
+		map.put("/temp/**", "anon");
 				
 		map.put("/login.jsp", "anon");
-		map.put("/main.jsp", "anon");
-		
-		map.put("/zhuce.jsp", "anon");
-		map.put("/longinctrl/checkusername.do", "anon");
-		
+
 		
 		//logout:退出登录
 		map.put("/logout.do", "logout");
 		
-		//perms:权限设置
-//		map.put("/goodsctrl/add.do", "perms[goods:add]");
-//		map.put("/goodsctrl/update.do", "perms[goods:update]");
-//		map.put("/goodsctrl/delete.do", "perms[goods:delete]");
-//		map.put("/goodsctrl/selectpage.do", "perms[goods:selectpage]");
 		//改为从权限表查询所有权限并设置
-		List<SysPermission> list = sysPermissionService.getAllPermissions();
+/*		List<SysPermission> list = sysPermissionService.getAllPermissions();
 		if(list!=null&&list.size()>0){
 			System.out.println("所有权限并设置：");
 			for (SysPermission perm : list) {
@@ -100,7 +96,7 @@ public class ShiroConfig {
 					map.put(url, "perms["+code+"]");
 				}
 			}
-		}
+		}*/
 		
 		//authc:需认证才能访问
 		map.put("/**", "authc");

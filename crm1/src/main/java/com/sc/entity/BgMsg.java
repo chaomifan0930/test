@@ -16,7 +16,7 @@ public class BgMsg implements Serializable {
 
     private Long companyId;
     
-    @DateTimeFormat(pattern="yyyy-mm-dd hh:mm:ss")
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date lastModifyDate;
 
     private static final long serialVersionUID = 1L;

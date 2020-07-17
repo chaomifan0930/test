@@ -45,6 +45,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<li><a href="javascript:;" onclick="picture_add('添加资讯','picture-add.html')"><i class="Hui-iconfont">&#xe613;</i> 图片</a></li>
 							<li><a href="javascript:;" onclick="product_add('添加资讯','product-add.html')"><i class="Hui-iconfont">&#xe620;</i> 产品</a></li>
 							<li><a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')"><i class="Hui-iconfont">&#xe60d;</i> 用户</a></li>
+							
+							
 					</ul>
 				</li>
 			</ul>
@@ -163,6 +165,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</ul>
 		</dd>
 	</dl>
+	<dl id="menu-official">
+			<dt><i class="Hui-iconfont">&#xe62e;</i> 办公管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="msgctrl/selectpage.do" data-title="短消息管理" href="javascript:;">短消息管理</a></li>
+					<li><a data-href="/bgCheckTaskctrl/selecttask.do" data-title="考核任务管理" href="javascript:;">考核任务管理</a></li>
+			</ul>
+		</dd>
+	</dl>
+	
 </div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
