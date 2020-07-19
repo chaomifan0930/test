@@ -1,9 +1,11 @@
 package com.sc.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.sc.entity.BgPrivateCalender;
 import com.sc.entity.BgPrivateCalenderExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface BgPrivateCalenderMapper {
     int countByExample(BgPrivateCalenderExample example);

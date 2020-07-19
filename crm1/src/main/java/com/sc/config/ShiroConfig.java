@@ -1,7 +1,7 @@
 package com.sc.config;
 
 import java.util.HashMap;
-import java.util.List;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import javax.servlet.Filter;
@@ -16,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.sc.entity.SysPermission;
 import com.sc.realm.CustomRealmMD5;
 import com.sc.service.SysPermissionService;
 

@@ -1,9 +1,11 @@
 package com.sc.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.sc.entity.BgTaskDetail;
 import com.sc.entity.BgTaskDetailExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface BgTaskDetailMapper {
     int countByExample(BgTaskDetailExample example);

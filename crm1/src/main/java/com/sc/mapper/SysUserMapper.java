@@ -1,9 +1,11 @@
 package com.sc.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.sc.entity.SysUser;
 import com.sc.entity.SysUserExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface SysUserMapper {
     int countByExample(SysUserExample example);

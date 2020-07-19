@@ -1,9 +1,11 @@
 package com.sc.mapper;
 
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.sc.entity.SysRole;
 import com.sc.entity.SysRoleExample;
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
 public interface SysRoleMapper {
     int countByExample(SysRoleExample example);

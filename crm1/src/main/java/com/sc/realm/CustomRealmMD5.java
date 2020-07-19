@@ -3,7 +3,6 @@ package com.sc.realm;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
@@ -16,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.sc.entity.SysPermission;
 import com.sc.entity.SysUser;
-import com.sc.service.SysPermissionService;
 import com.sc.service.SysUserService;
 
 public class CustomRealmMD5 extends AuthorizingRealm{
