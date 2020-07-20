@@ -79,6 +79,6 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-<!--/此乃百度统计代码，请自行删除
+
 </body>
 </html>
